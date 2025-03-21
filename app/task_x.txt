@@ -1,0 +1,19 @@
+  task_a.c (task_a.h) 
+   Blocking Code
+   Tiene un parametro global que se llama g_task_a_cnt
+   En task_a_init imprime un par de cosas en el log
+   En task_a_update le suma 1 a g_task_a_cnt, imprime un par de cosas en el log. Esta funcion tambien tiene un for que se ejecuta n cantidad de veces, por esto es que se llama blocking code, ya que el programa permanecerá ejecutando solamente ese for hasta que se cumplan las veces  
+...
+
+  task_b.c (task_b.h)
+   Non-Blocking Code
+   Tambien tiene un parámetro global que se llama g_task_b_cnt
+   El task_b_init hace lo mismo qie el de task_a
+   En task_b_update le suma uno al contador global 
+
+...
+
+  task_c.c (task_c.h)
+   Update by Time Code
+
+...

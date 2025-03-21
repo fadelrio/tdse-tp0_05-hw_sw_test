@@ -1,0 +1,18 @@
+  app.c (app.h)
+   Endless loops, which execute tasks with fixed computing time. This 
+   sequential execution is only deviated from when an interrupt event occurs.
+
+...
+
+Define una estructura que contiene dos punteros a funciones que toman void * como parámetros
+
+
+Luego define una estructura que contiene las funciones de inicio y de actualizacion de cada una de las tareas. 
+
+
+En app_init invoca a cada una de las funciones de inicializacion de cada una de las tareas.
+
+
+En app_update invoca a cada una de las funciones de actualización de cada una de las tareas.
+
+
